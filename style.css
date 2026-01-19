@@ -1,0 +1,157 @@
+body{
+    font-family: "Inter", sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.fixedPadding{
+    padding: 100px 0;
+}
+img{
+    max-width: 100%;
+}
+:root{
+    --bg-color:  linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
+}
+.btn{
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: var(--bg-color);
+    transition: .4s;
+    border: 1px solid var(--bg-color);
+    animation: gradientMove 4s ease infinite;
+    background-size: 300% 300%;
+}
+.btn:hover{
+    transform: scale(1.05);
+}
+
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+p{
+    color: #d1ced5;
+}
+/* header section */
+
+.headerSection{
+    background-color: #1A0B2E;
+    color: #fff;
+    border-bottom: 1px solid #412567;
+}
+.headerSection nav a{
+    color: #fff;
+    transition: .4s;
+    
+}
+.headerSection nav a:hover{
+    color:rgba(251, 9, 180, 1);
+}
+
+/* banner Section */
+
+.bannerSection{
+    background: url(./imgs/hero-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px;
+    color: #fff;
+}
+.bannerSection .innerImage .heroCircle{
+    width: 400px;
+}
+/* .bannerSection .innerImage::after {
+	content: 'NEW';
+	padding: 4px 15px;
+	border-radius: 30px;
+	position: absolute;
+	top: 28px;
+	right: 36%;
+	background-color: #00FF88;
+	z-index: 99;
+	color: #1A0B2E;
+	font-weight: 600;
+	font-size: 18px;
+} */
+.bannerSection .innerImage .icon{
+    font-size: 18px;
+    background-color: #00FF88;
+	z-index: 99;
+	color: #1A0B2E;
+	font-weight: 600;
+    padding: 4px 15px;
+	border-radius: 30px;
+    top: 28px;
+	right: 36%;
+}
+.bannerSection .innerImage .heromic{
+    width: 150px;
+}
+.bannerSection .innerImage{
+    top: -30px;
+}
+.bannerSection .text h1{
+    font-size: 60px;
+    font-weight: 800;
+}
+.bannerSection .text p{
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.bannerSection .text .btn2{
+    background: transparent;
+    color: #00FF88;
+    border: 1px solid #00FF88;
+    padding: 9px 20px;
+}
+
+
+
+
+/* about Section */
+
+.aboutSection{
+    background-color: rgba(26, 11, 46, 1);
+    color: #fff;
+}
+.fixedText h1{
+    font-size: 48px;
+    font-weight: 700;
+}
+.fixedText p{
+    line-height: 28px;
+}
+.aboutSection .fixedText p {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.aboutSection .items{
+    border-top: 1px solid #412567;
+}
+.aboutSection .item h1{
+    font-size: 48px;
+    font-weight: 900;
+    color: #00FF88;
+}
+.aboutSection .item span{
+    font-size: 38px;
+}
+.aboutSection .item p{
+    font-weight: 400;
+}
