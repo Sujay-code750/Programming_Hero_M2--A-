@@ -62,6 +62,9 @@ p{
 .headerSection nav a:hover{
     color:rgba(251, 9, 180, 1);
 }
+.headerSection .mobileHeader{
+    display: none;
+}
 
 /* banner Section */
 
@@ -292,6 +295,9 @@ p{
 .meetSection .mainContent p{
     opacity: 0.6;
 }
+.meetSection .hostImage {
+	width: 500px;
+}
 .meetSection .mainContent ul li{
     width: 40px;
     height: 40px;
@@ -333,13 +339,169 @@ p{
     align-items: center;
     transition: .4s;
 }
-.footerSection ul li p:hover{
+.footerSection span{
+    opacity: .6;
+    transition: .4s;
+}
+.footerSection ul li span:hover{
     color:rgba(251, 9, 180, 1);
 }
 .footerSection ul li a img{
     margin-right: 10px;
 }
-.footerSection p{
-    opacity: .6;
-    transition: .4s;
+
+
+
+
+
+/* responsive css */
+
+@media (max-width:1250px){
+    .container{
+        width: 90%;
+    }
+    .fixedPadding{
+        padding: 70px 0;
+    }
+    .bannerSection .innerImage .heroCircle {
+	width: auto;
+}
+.bannerSection .innerImage .heromic {
+	width: auto;
+}
+.bannerSection .innerImage .icon {
+	right: 29%;
+}
+
+.footerSection .logo img{
+    width: 250px;
+}
+.aboutSection .fixedText p {
+	width: 100%;
+}
+
+}
+@media (max-width:992px){
+    .bannerSection .innerImage .icon {
+	right: 21%;
+}
+.whyChooseSection .item {
+	padding: 40px;
+}
+.featureSection .items {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	gap: 30px;
+}
+.meetSection .image {
+	width: 100%;
+}
+.footerSection ul {
+	flex-wrap: wrap;
+    gap: 10px;
+}
+}
+@media (max-width:776px){
+    .bannerSection {
+	padding: 90px;
+}
+.bannerSection .innerImage .heroCircle {
+	width: 300px;
+}
+.bannerSection .innerImage .heromic {
+	width: 100px;
+}
+.bannerSection .innerImage {
+	top: 0px;
+}
+.bannerSection .innerImage .icon {
+	right: 21%;
+}
+.aboutSection .items {
+	grid-template-columns: repeat(2, 1fr);
+	gap: 50px;
+}
+.whyChooseSection .item {
+	padding: 24px;
+}
+.meetSection .mainContent {
+	flex-direction: column;
+    text-align: center;
+}
+.meetSection .mainContent ul{
+    justify-content: center;
+}
+.meetSection .mainContent .hostImage{
+    width: 200px;
+    margin: 0 auto;
+}
+}
+
+@media (max-width:576px){
+    .headerSection .header{
+        display: none;
+    }
+    .headerSection .mobileHeader{
+        display: block;
+    }
+    .bannerSection .innerImage .heroCircle {
+	width: 250px;
+}
+.bannerSection .innerImage .heromic {
+	width: 70px;
+}
+.bannerSection {
+	padding: 0px;
+}
+.bannerSection .innerImage {
+	top: 60px;
+    margin-bottom: 70px;
+}
+.bannerSection .text h1 {
+	font-size: 50px;
+}
+.fixedText h1 {
+	font-size: 35px;
+    margin-bottom: 10px;
+}
+.aboutSection .fixedText p {
+	padding-top: 10px;
+}
+.aboutSection .items {
+	padding: 0;
+    padding-top: 30px;
+}
+.fixedPadding {
+	padding: 50px 0;
+}
+.whyChooseSection .items {
+	display: grid;
+	grid-template-areas: 
+    'audio' 
+    'mobile' 
+    'global'
+    'interviews'
+    'resources';
+	gap: 30px;
+	box-sizing: border-box;
+}
+.featureSection .item .text {
+	padding: 15px;
+}
+.meetSection .mainContent .hostImage{
+    width: 150px;
+}
+.meetSection .mainContent {
+	padding: 24px;
+    border-radius: 24px;
+}
+.footerSection.fixedPadding {
+	padding: 40px 0;
+}
+.headerSection .logo img {
+	width: 200px;
+}
+.headerSection .mobileIcon img {
+	width: 25px;
+}
 }
