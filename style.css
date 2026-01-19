@@ -44,7 +44,8 @@ img{
 }
 
 p{
-    color: #d1ced5;
+    color: #fff;
+    opacity: 0.7;
 }
 /* header section */
 
@@ -119,6 +120,11 @@ p{
     border: 1px solid #00FF88;
     padding: 9px 20px;
 }
+.bannerSection .buttons span {
+	margin-right: 5px;
+	position: relative;
+	top: 2px;
+}
 
 
 
@@ -155,3 +161,66 @@ p{
 .aboutSection .item p{
     font-weight: 400;
 }
+
+.aboutSection .items{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+
+/* whyChoose Section */
+
+.whyChooseSection{
+    background-color: #230e3d;
+    color: #fff;
+}
+.whyChooseSection .item{
+    padding: 40px 45px;
+    background-color: #2a0f4d;
+    border-radius: 35px;
+}
+.whyChooseSection .items{
+    display: grid;
+    grid-template-areas: 
+    'audio mobile mobile'
+    'audio global global'
+    'interviews interviews resources';
+    gap: 30px;
+      box-sizing: border-box;
+}
+.whyChooseSection .item{
+    align-content: center;
+    box-sizing: border-box;
+}
+.whyChooseSection .audio{
+    grid-area: audio;
+}
+.whyChooseSection .mobile{
+    grid-area: mobile;
+}
+.whyChooseSection .global{
+    grid-area: global;
+}
+.whyChooseSection .interviews{
+    grid-area: interviews;
+}
+.whyChooseSection .resources{
+    grid-area: resources;
+}
+
+
+.whyChooseSection .item img{
+    width: auto;
+    height: 60px;
+}
+.whyChooseSection .item h2{
+    font-size: 24px;
+    font-weight: 700;
+}
+.whyChooseSection .item p{
+    opacity: 0.6;
+}
+
+
+
+
