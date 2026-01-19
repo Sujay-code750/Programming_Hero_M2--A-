@@ -224,3 +224,52 @@ p{
 
 
 
+/* feature Section */
+
+.featureSection{
+    background-color: #1a0b2e;
+    color: #fff;
+}
+.featureSection .items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.featureSection .item{
+    background-color: #250d44;
+    border-radius: 24px;
+}
+.featureSection .item iframe{
+    border-radius: 24px 24px 0 0;
+}
+.featureSection .item .text{
+    color: #fff;
+    padding: 24px;
+}
+.featureSection .item h2{
+    font-size: 24px;
+    font-weight: 700;
+}
+.featureSection .item p{
+    line-height: 24px;
+    opacity: 0.6;
+}
+.featureSection .item .time{
+    display: flex;
+}
+.featureSection .item .time img{
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    margin-top: 3px;
+}
+.featureSection .item .time p{
+    font-size: 16px;
+    font-weight: 600;
+    color: #01ff88;
+    opacity: 1;
+}
+
+
+
+
