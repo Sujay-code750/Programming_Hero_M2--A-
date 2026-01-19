@@ -273,3 +273,73 @@ p{
 
 
 
+/* meet Section */
+
+.meetSection{
+    background-color: #1a0b2e;
+    color: #fff;
+    padding-top: 0;
+}
+.meetSection .mainContent{
+    background-color: #250e44;
+    padding: 40px;
+    border-radius: 40px;
+}
+.meetSection .mainContent h2{
+    font-size: 32px;
+    font-weight: 700;
+}
+.meetSection .mainContent p{
+    opacity: 0.6;
+}
+.meetSection .mainContent ul li{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #412567;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+.meetSection .mainContent ul li:hover{
+    background-color: #412567;
+}
+
+/* footer Section */
+
+.footerSection{
+    color: #fff;
+    background: url(./imgs/footer-bg.png) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footerSection .logo {
+	display: flex;
+    justify-content: center;
+}
+.footerSection ul{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin: 0 auto;
+    /* grid-template-columns: repeat(4, 1fr); */
+}
+.footerSection ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+.footerSection ul li p:hover{
+    color:rgba(251, 9, 180, 1);
+}
+.footerSection ul li a img{
+    margin-right: 10px;
+}
+.footerSection p{
+    opacity: .6;
+    transition: .4s;
+}
